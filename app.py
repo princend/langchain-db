@@ -17,6 +17,14 @@ agent_executor = create_sql_agent(llm, db=db, verbose=True)
 # agent_executor.invoke(
 #     "List the total sales per country. Which country's customers spent the most?"
 # )
-agent_executor.invoke(
-    "list all table names"
+answer=agent_executor.invoke(
+    "I want to find name is ju which's description"
 )
+# answer=agent_executor.invoke(
+#     "list all table names"
+# )
+
+try:
+    print(answer['output'])
+except Exception as e:
+    print(e)
