@@ -19,8 +19,11 @@ agent_executor = create_sql_agent(llm, db=db, verbose=True)
 
 # 問話-自然語言搜尋
 answer=agent_executor.invoke(
-    "how many albums Pablo Picasso have?"
+    "give AC/DC all album names "
 )
+# answer=agent_executor.invoke(
+#     "how many albums Pablo Picasso have?"
+# )
 # answer=agent_executor.invoke(
 #     "list all table names"
 # )
