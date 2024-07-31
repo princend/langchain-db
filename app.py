@@ -18,15 +18,20 @@ agent_executor = create_sql_agent(llm, db=db, verbose=True)
 # agent_executor = create_sql_agent(llm, db=db, agent_type="openai-tools", verbose=True)
 
 # 問話-自然語言搜尋
-answer=agent_executor.invoke(
-    "give AC/DC all album names "
-)
+# answer=agent_executor.invoke(
+#     "give AC/DC all album names "
+# )
 # answer=agent_executor.invoke(
 #     "how many albums Pablo Picasso have?"
 # )
 # answer=agent_executor.invoke(
-#     "list all table names"
+#     "list all CompanyName from Suppliers"
 # )
+
+answer=agent_executor.invoke(
+    "give me the company Supplier QWUSF which address"
+)
+
 # answer=agent_executor.invoke(
 #     "I want to find name is ju which's description"
 # )
