@@ -10,5 +10,4 @@ db_name = 'Northwind'  # 替換為您的數據庫名稱
 # db_name = 'chinook'  # 替換為您的數據庫名稱
 
 
-
-google_api_key='AIzaSyAkWbuYTAjbg3fr-biNzCs_O4zAqwvVe7o'
+google_api_key = os.getenv('GOOGLE_API_KEY', '')  

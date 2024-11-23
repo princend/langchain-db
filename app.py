@@ -4,6 +4,8 @@ from db_connection import MySqlConnection ,SQLliteConnection
 from langchain_community.agent_toolkits import create_sql_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 import settings
+from dotenv import load_dotenv
+load_dotenv()
 
 # 構建連接字串
 db_connection_string = MySqlConnection().getUri()
